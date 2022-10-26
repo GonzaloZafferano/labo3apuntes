@@ -1,0 +1,59 @@
+#contenedorTablaDinamica{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+table{
+    border-collapse: collapse;
+}
+
+
+th{
+    text-transform: capitalize;
+    background-color: indianred;
+}
+
+th,td{
+    border: 1px solid black;
+    padding: 3px 5px;
+}
+
+#divFormulario{
+    display: flex;
+    justify-content: center; 
+}
+
+.puntero{
+    cursor: pointer;
+}
+
+.gris{
+    background-color: #ccc;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.inputError{
+    border-color: 1px solid red;
+    color: red;
+}
+
+.smallError{
+    color: red;
+    font-weight: bold;
+    display: block;
+}
+
+
+.ocultar{
+    display: none;
+}
+
+.mostrar{
+    display: inline-block;   
+}
+

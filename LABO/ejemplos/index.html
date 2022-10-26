@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <img src="" alt="">
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <form>
+        <fieldset>
+            <legend>Formulario de Alta</legend>
+            <label for=""></label>
+            <input type="text" name="titulo" id="titulo" placeholder="titulo">
+            <small></small>
+
+            <input type="text" name="descripcion" id="descripcion"  placeholder="Descripcion">
+            <small></small>
+
+            <input type="number" name="precio" id="precio"  placeholder="precio">
+            <small></small>
+
+            <input type="number" name="puertas" id="puertas"  placeholder="puertas">
+            <small></small>
+
+            <input type="number" name="kms" id="kms"  placeholder="kms">
+            <small></small>
+
+            <input type="number" name="potencia" id="potencia"  placeholder="potencia">
+            <small></small>
+
+            <input type="hidden" data-id="" name="id" id="id">
+    
+            <button type="submit" id="agregar" name="agregar">Agregar</button>
+            <button type="reset" id="limpiar" name="limpiar">Limpiar</button>
+            <button type="button" id="eliminar" class="ocultar" name="eliminar">Eliminar</button>
+
+        </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+
+    <div id="contenedorTablaDinamica">
+        <div id="tablaDinamica"></div>
+    </div>
+<script src="./lista.js" type="module" defer></script>
+</body>
+</html>

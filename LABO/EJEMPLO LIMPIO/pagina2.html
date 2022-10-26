@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/pagina2.js" type="module" defer></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav> 
+            <div>
+                <img src="./images/" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section><h1>Administracion</h1></section>
+    <main id="seccionForm">        
+            <form>
+                <fieldset>
+                    <legend name="tituloForm" id="tituloForm">Formulario de Alta</legend>
+
+
+                    
+
+
+                    <label for="titulo">Titulo</label>
+                    <input type="text" name="titulo" id="titulo" placeholder="titulo">
+                    <small></small>
+        
+                    <label>Transaccion</label>
+                    <div id="divRbtn">
+                        <label for="venta">Venta <input name="transaccion" id="venta" type="radio"></label>
+                        <label for="alquiler">Alquiler<input name="transaccion" id="alquiler" type="radio"></label>
+                    </div>
+                    
+
+
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" name="descripcion" id="descripcion"  placeholder="Descripcion">
+                    <small></small>
+        
+                    <label for="precio">Precio</label>
+                    <input type="number" name="precio" id="precio"  placeholder="precio">
+                    <small></small>
+
+                    <div id="inputsConIcono">
+                        <div>
+                            <img src="./icons/iconmonstr-car-3.png" alt="">
+                            <input type="number" name="puertas" id="puertas"  placeholder="puertas">
+                            <small></small>
+                        </div>
+            
+                        <div>
+                            <img src="./icons/iconmonstr-car-3.png" alt="">
+                            <input type="number" name="kms" id="kms"  placeholder="kms">
+                            <small></small>     
+                        </div>
+
+                        <div>
+                            <img src="./icons/iconmonstr-car-3.png" alt="">
+                            <input type="number" name="potencia" id="potencia"  placeholder="potencia">
+                            <small></small>
+                        </div>
+                    </div>
+        
+         
+
+
+        
+                    <input type="hidden" data-id="" name="id" id="id">    
+                    <div id="divBotones">
+                        <button type="submit" id="agregar" name="agregar"><img src="./icons/iconmonstr-car-3.png" alt=""> Agregar</button>
+                        <button type="reset" id="limpiar" name="limpiar">Limpiar</button>
+                        <button type="button" id="eliminar" class="ocultar" name="eliminar">Eliminar</button>
+                    </div>
+                </fieldset>
+            </form>
+    </main>
+
+
+    
+    
+    <section id="contenedorTablaDinamica">
+        <div id="spinner" class="fa-2x"></div>
+        <div id="tablaDinamica"></div>
+    </section>
+
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+            <div>
+                <small>Todos los derechos reservados 2022 &copy;</small>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

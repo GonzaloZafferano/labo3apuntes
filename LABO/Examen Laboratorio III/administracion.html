@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta y adopcion de mascotas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/administracion.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <nav> 
+            <div>
+                <img id="logo" src="./images/Logo.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li class="d-block"><a href="./index.html">Nosotros</a></li>
+                <li class="d-block"><a href="#">Anuncios</a></li>
+                <li class="d-block"><a href="#">Blog</a></li>
+                <li class="d-block"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="administracion">
+        <h1>Administracion</h1>
+        <img src="./images/fotoAdministracion.jpg" alt="foto animales">
+    </section>
+    <main id="seccionForm">        
+            <form>
+                <fieldset>
+                    <legend name="tituloForm" id="tituloForm">Formulario de Alta</legend>
+                    <label for="titulo">Titulo</label>
+                    <input type="text" name="titulo" id="titulo" placeholder="titulo">
+                    <small></small>                          
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" name="descripcion" id="descripcion"  placeholder="Descripcion">
+                    <small></small>
+                    <label>Animal</label>
+                    <div id="divRbtn">
+                        <label for="perro">Perro <input name="animal" id="perro" type="radio"></label>
+                        <label for="gato">Gato<input name="animal" id="gato" type="radio"></label>
+                    </div>                   
+                    <label for="precio">Precio</label>
+                    <input type="number" name="precio" id="precio"  placeholder="precio">
+                    <small></small>
+                    <div id="inputsConIcono">
+                        <div>
+                            <i class="fas fa-dog"></i>
+                            <input type="text" name="raza" id="raza"  placeholder="Raza">
+                            <small></small>
+                        </div>
+                        <div>                
+                            <i class="fas fa-dove"></i>
+                            <input type="datetime" name="fecha" id="fecha" placeholder="dd/mm/aaaa">
+                            <small></small>     
+                        </div>
+                        <div>
+                            <i class="fas fa-syringe"></i>
+                            <select name="inyeccion" id="inyeccion">
+                                <optgroup>
+                                    <option selected value="">--Elegir--</option>                                
+                                    <option value="si">Si</option>
+                                    <option value="no">No</option>
+                                </optgroup>
+                            </select>
+                            <small></small>
+                        </div>
+                    </div>        
+                    <input type="hidden" data-id="" name="id" id="id">    
+                    <div id="divBotones">
+                        <button type="submit" id="agregar" name="agregar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button type="reset" id="limpiar" name="limpiar">Limpiar</button>
+                        <button type="button" id="eliminar" class="ocultar" name="eliminar">Eliminar</button>
+                    </div>
+                </fieldset>
+            </form>
+    </main>    
+    <section id="contenedorTablaDinamica">
+        <div id="spinner" class="fa-2x"></div>
+        <div id="tablaDinamica"></div>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div>
+                <small>Todos los derechos reservados 2022 &copy;</small>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
